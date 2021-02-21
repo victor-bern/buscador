@@ -1,12 +1,13 @@
 <?php
 
-namespace Src\App;
+namespace Src\Core;
+use League\Plates\Engine;
 
 class View
 {
     private $view;
 
-    public function __constructor(string $dir, string $ext = "php")
+    public function __construct(string $dir, string $ext = "php")
     {
         $this->view = Engine::create($dir, $ext);
     }
