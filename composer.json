@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/desafio_fullstack",
+  "description": "Desafio Prático para vaga de Dev FullStack",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Src\\": "Src"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "ext-pdo": "*",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/router": "1.0.*"
+  }
+}
